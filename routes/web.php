@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MercadoLibre@autenticarse');
+Route::get('autenticado', 'MercadoLibre@autenticarse');
+Route::Resource('MercadoLibre', 'App');

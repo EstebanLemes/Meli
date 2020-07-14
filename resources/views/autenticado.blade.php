@@ -24,7 +24,7 @@
         	            $det_item = Http::get('https://api.mercadolibre.com/items/'.$order['order_items']['0']['item']['id']);
         	            $det_item = $det_item->json();
         	            
-        	           
+        	           //Comentario
         	            
         	            $buyer = $order['buyer']['first_name'].' '.$order['buyer']['last_name'];
         	            
